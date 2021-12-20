@@ -30,10 +30,7 @@ static void	my_handler(int mysig, siginfo_t *info, void *context)
 	i++;
 	if (i == 8)
 	{
-		if (x == 0)
-			kill(info->si_pid, SIGUSR2);
-		else
-			ft_putchar(x);
+		ft_putchar(x);
 		i = 0;
 		x = 0;
 		pid = 0;
